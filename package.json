@@ -1,0 +1,18 @@
+{
+  "name": "architectonic-meta",
+  "version": "0.1.0",
+  "description": "Self-knowledge and upkeep package for Architectonic systems.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "files": [
+    "README.md",
+    "meta.md"
+  ],
+  "keywords": [
+    "architectonic",
+    "meta",
+    "sophia",
+    "self-audit",
+    "okf"
+  ]
+}
