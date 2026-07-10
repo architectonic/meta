@@ -1,15 +1,15 @@
 ---
 type: Entry Point
 title: meta
-description: Self-knowledge and upkeep package for drift control, audit, maintenance, and recursive improvement.
-tags: [meta, sophia, upkeep, self-audit, recursive-improvement, okf]
+description: System-maintenance package for drift review, audit, repair, and revision policy.
+tags: [meta, upkeep, self-audit, maintenance, revision, okf]
 okf_version: "0.1"
 status: draft
 ---
 
 # meta
 
-`meta` is the self-knowledge layer of an Architectonic constitution.
+`meta` is the system-maintenance layer of an Architectonic constitution.
 
 Install it with:
 
@@ -25,31 +25,33 @@ npx architectonic add living-knowledge
 
 ## Role
 
-Meta operationalizes Sophia as recursive improvement of the whole system.
+`meta` records how a system checks its own condition, detects drift, reviews failures, maintains artifacts, and revises procedures.
 
-It records how the system observes, maintains, audits, repairs, and improves itself without bypassing doctrine or governance.
+It does not grant a system authority to change its own purpose, boundaries, or permissions. Material changes remain subject to the authority and review rules defined elsewhere in the stack.
 
 ## Boundary
 
 `meta` is not general knowledge about the world. That belongs in `knowledge`.
 
-`meta` is knowledge about the system itself: its drift, weaknesses, review cadence, maintenance procedures, failure modes, and revision policies.
+`meta` contains knowledge about the system itself: known weaknesses, review cadence, maintenance procedures, failure modes, verification evidence, and revision policies.
+
+A meta artifact should exist only when it changes future maintenance, preserves verification evidence, defines a review boundary, or prevents a recurring mistake. Routine history belongs in version control or operational logs.
 
 ## Relationship to the stack
 
 ```text
 constitution      = root scaffold
-doctrine          = sets the governing rules for self-maintenance
+doctrine          = sets the governing rules for maintenance
 identity          = defines who may audit, approve, or intervene
 project           = supplies operating context for upkeep
-skills            = supplies the procedures used in upkeep
+skills            = supplies reusable maintenance procedures
 knowledge         = records reviewed claims and evidence
-meta              = records self-knowledge, drift control, and recursive improvement
-living-knowledge  = optional addon for campaign-based maintenance of the knowledge corpus
+meta              = records system condition, drift, maintenance, and revision policy
+living-knowledge  = optional addon for campaign-based corpus maintenance
 ```
 
 ## Core file
 
 ```text
-meta.md -- root self-maintenance contract
+meta.md -- root system-maintenance contract
 ```
