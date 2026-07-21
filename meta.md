@@ -1,40 +1,33 @@
 ---
 type: Meta
 title: Meta Contract
-description: Root contract for system self-observation, upkeep, audit, and recursive improvement.
-tags: [meta, sophia, upkeep, audit, drift, recursive-improvement, okf]
-okf_version: "0.1"
-status: draft
+description: Contract for audit, drift review, failure learning, revision, and retirement.
+tags: [meta, audit, drift, maintenance, revision]
+protocol_version: "0.2.0"
+status: experimental
 ---
 
 # Meta Contract
 
-Meta is the system's knowledge about itself.
-
-It supports recursive improvement without pretending that the system is wise by default.
+Meta is the organization's knowledge about the condition of its own operating system.
 
 ## Responsibilities
 
 ```text
-self-audit
+conformance review
 drift detection
-maintenance cadence
-quality metrics
 known weaknesses
 failure-mode review
-revision policy
-retirement policy
-upkeep campaigns
+quality and evidence metrics
+maintenance cadence
+revision and migration policy
+retirement of obsolete procedures and artifacts
 ```
 
 ## Rules
 
-1. Meta procedures must not bypass doctrine, authority, or human review requirements.
-2. Self-improvement must be auditable.
-3. The system must record what changed, why it changed, and what evidence supported the change.
-4. Obsolete procedures should be retired rather than accumulated indefinitely.
-5. Recursive improvement should improve the system's capacity to know, judge, and act.
-
-## Relationship to Sophia
-
-Sophia is not a file or a module. Meta is the operational layer through which the system pursues better ordering of itself over time.
+1. Meta work does not bypass constitution, doctrine, authority, or human review.
+2. A maintenance change records what changed, why, under whose authority, and with what evidence.
+3. Obsolete structure is retired rather than accumulated indefinitely.
+4. An artifact exists only when it changes future maintenance, preserves verification evidence, defines a review boundary, or prevents a recurring mistake.
+5. Improvement claims are evaluated from decisions and outcomes, not from self-description.
