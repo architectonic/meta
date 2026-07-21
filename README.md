@@ -1,5 +1,7 @@
 # Meta
 
+**Architectonic layer:** [main CLI and adaptive profiles](https://github.com/architectonic/architectonic)
+
 > **Status: experimental, pre-1.0.** Meta records how a system inspects, repairs, revises, and retires its own operating structure. It does not grant authority to rewrite purpose, permissions, or completed history.
 
 `meta` may stand alone when the immediate need is:
