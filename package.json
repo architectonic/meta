@@ -1,6 +1,6 @@
 {
   "name": "architectonic-meta",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Meta layer for system audit, drift review, failure learning, revision, and retirement.",
   "license": "Apache-2.0",
   "type": "module",
@@ -16,6 +16,7 @@
     "CHANGELOG.md",
     "architectonic.protocol.json",
     "meta.md",
+    "ADAPTIVE_MAINTENANCE.md",
     "scripts"
   ],
   "scripts": {
