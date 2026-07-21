@@ -1,36 +1,16 @@
 # Meta
 
-> **Status: experimental, pre-1.0.** This package defines one layer of the Architectonic protocol. Evaluate it through its canonical contract, package validator, conformance manifest, and explicit limitations.
+> **Status: experimental, pre-1.0.** Meta records how a system inspects, repairs, revises, and retires its own operating structure. It does not grant authority to rewrite purpose, permissions, or completed history.
 
-`meta` defines how the organization inspects and maintains its own operating system.
+`meta` may stand alone when the immediate need is:
 
-## What it gives an agent
+- conformance and drift review;
+- known weaknesses and recurring failures;
+- maintenance cadence;
+- quality, evidence, cost, and review-burden metrics;
+- migration and revision policy;
+- retirement of obsolete procedures and artifacts.
 
-- one predictable home for this concern;
-- a canonical entry that can be found through `architectonic map`;
-- a machine-readable `architectonic.protocol.json`;
-- boundaries that prevent neighboring layers from silently owning the same concept;
-- package validation that runs against both the source checkout and the exact npm tarball.
+Adaptive maintenance should reduce demonstrated ambiguity or failure, not keep agents busy. Add structure when evidence justifies it and retire structure when it no longer changes future action.
 
-## Canonical entry
-
-```text
-meta.md
-```
-
-## Boundary
-
-Meta does not grant authority to rewrite the constitution, expand permissions, or bypass human review.
-
-## Install
-
-```bash
-npx architectonic@latest add meta --source npm
-npx architectonic@latest verify
-```
-
-Installing a layer provides reusable public structure. Organization-specific facts, private knowledge, credentials, runtime state, and local decisions belong only in controlled workspace instances.
-
-## Claims
-
-This package claims only that its declared structure and validators are inspectable and reproducible. It does not claim universal performance improvement or domain correctness.
+See [`ADAPTIVE_MAINTENANCE.md`](./ADAPTIVE_MAINTENANCE.md) and [`meta.md`](./meta.md).
