@@ -1,7 +1,7 @@
 {
   "name": "architectonic-meta",
-  "version": "0.1.2",
-  "description": "Self-knowledge and upkeep package for Architectonic systems.",
+  "version": "0.2.0",
+  "description": "Meta layer for system audit, drift review, failure learning, revision, and retirement.",
   "license": "Apache-2.0",
   "type": "module",
   "repository": {
@@ -13,13 +13,21 @@
   },
   "files": [
     "README.md",
-    "meta.md"
+    "CHANGELOG.md",
+    "architectonic.protocol.json",
+    "meta.md",
+    "scripts"
   ],
+  "scripts": {
+    "validate": "node scripts/validate-package.mjs",
+    "test": "npm run validate"
+  },
   "keywords": [
     "architectonic",
     "meta",
-    "sophia",
-    "self-audit",
-    "okf"
+    "human-ai",
+    "agents",
+    "provenance",
+    "governance"
   ]
 }
