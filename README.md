@@ -1,57 +1,36 @@
----
-type: Entry Point
-title: meta
-description: System-maintenance package for drift review, audit, repair, and revision policy.
-tags: [meta, upkeep, self-audit, maintenance, revision, okf]
-okf_version: "0.1"
-status: draft
----
+# Meta
 
-# meta
+> **Status: experimental, pre-1.0.** This package defines one layer of the Architectonic protocol. Evaluate it through its canonical contract, package validator, conformance manifest, and explicit limitations.
 
-```bash
-npx architectonic add meta
-```
+`meta` defines how the organization inspects and maintains its own operating system.
 
-`meta` records how a system checks its own condition, detects drift, reviews failures, maintains artifacts, and revises procedures.
+## What it gives an agent
 
-It does not grant a system authority to change its own purpose, boundaries, or permissions. Material changes remain subject to the authority and review rules defined elsewhere in the stack.
+- one predictable home for this concern;
+- a canonical entry that can be found through `architectonic map`;
+- a machine-readable `architectonic.protocol.json`;
+- boundaries that prevent neighboring layers from silently owning the same concept;
+- package validation that runs against both the source checkout and the exact npm tarball.
 
-## In the ensemble
+## Canonical entry
 
 ```text
-constitution      composition contract for the ensemble
-doctrine          purpose, principles, ontology, epistemology, ethics, governance, incentives
-identity          actors, roles, authority, delegation, incentives, privacy
-project           operating-unit context, sources, decisions, risks, continuity
-skills            reusable procedures, verification, failure handling
-knowledge         claims, sources, evidence, uncertainty, known unknowns
-models            model metadata, evaluations, capability requirements, routing policy
-agents            software actors composed from identity, skills, models, knowledge, permissions
-living-knowledge  optional: governed maintenance of frequently changing corpora
-meta              audit, upkeep, drift review, revision policy
+meta.md
 ```
-
-`meta` is not general knowledge about the world. It contains knowledge about the system itself: known weaknesses, review cadence, maintenance procedures, failure modes, verification evidence, and revision policies.
-
-## Commands
-
-```bash
-npx architectonic add meta
-npx architectonic add meta --source npm
-npx architectonic init
-npx architectonic list
-npx architectonic doctor
-```
-
-CLI: https://github.com/architectonic/architectonic
 
 ## Boundary
 
-A meta artifact should exist only when it changes future maintenance, preserves verification evidence, defines a review boundary, or prevents a recurring mistake. Routine history belongs in version control or operational logs.
+Meta does not grant authority to rewrite the constitution, expand permissions, or bypass human review.
 
-## Core file
+## Install
 
-```text
-meta.md   root system-maintenance contract
+```bash
+npx architectonic@latest add meta --source npm
+npx architectonic@latest verify
 ```
+
+Installing a layer provides reusable public structure. Organization-specific facts, private knowledge, credentials, runtime state, and local decisions belong only in controlled workspace instances.
+
+## Claims
+
+This package claims only that its declared structure and validators are inspectable and reproducible. It does not claim universal performance improvement or domain correctness.
